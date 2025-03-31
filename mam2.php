@@ -1,5 +1,5 @@
 <?php
-function Numbers(array $numbers): array {
+function numbers(array $numbers): array {
 	$a = [];
 	foreach ($numbers as $number){
 		if ($number >  1 && isPerfect($number)) {
@@ -18,5 +18,5 @@ function isPerfect(int $x): bool {
 	return $sum === $x;
 }
 $c = [2, 6, 12, 28, 236, 666];
-$a = Numbers($c);
+$a = numbers($c);
 print_r($a);
